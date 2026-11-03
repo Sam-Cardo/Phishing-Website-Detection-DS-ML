@@ -37,19 +37,19 @@ I choose this topic when I was doing research for topic, I came across this and 
 *	Loading and inspecting the datasets that I have found from Kaggle using Jupyter notebook and panadas.
 *	Explored those datasets and all the features that were involved inside of this dataset.
 *	Prepared the data to be used with machine learning.
-* Trained Three different models to go over the datasets and see which had the best predictability and accuracy and these models used clarification learning.
+* Looked at different models to go over the datasets and see which had the best predictability and accuracy and these models gave me for my final model.
 *	Tested the performance of these models using different metrics like accuracy, precision, recall and cross validation.
 *	Finally, I saved the Random Forest model once it was trained.
 
-## Data Preparation 
+## Dataset Infomation
 * Total Rows: 11,056
 * Columns: 32
-* Features:  32
+* Features: 32
 * Legitimate websites (1): 6,157
 * Phishing websites (-1):  4,898
 
 ### Explanation:
-how I prepared the data for machine learning was that I first loaded the the dataset into the notebook using pandas then I need to check what dimensions that this data set had like all the column names. Also, I needed to clean the column names and make the data into a suitable format for Jupiter notebook to make it usable format that was all done by using pandas and loading the csv that Kaggle provided to me and I noticed that it had 11,055 records inside of it with 32 columns with 30 input features. After preparing this data into usable data I then used a function from scikit-learn to divide it into training data and testing too for my model to determine many things about this dataset and this was all done using 80/20 split 80% for the to train the model and then the 20% was for the performance of it. 
+How I prepared the data for machine learning was that I first loaded the the dataset into the notebook using pandas then I need to check what dimensions that this data set had like all the column names. Also, I needed to clean the column names and make the data into a suitable format for Jupiter notebook to make it usable format that was all done by using pandas and loading the csv that Kaggle provided to me and I noticed that it had 11,055 records inside of it with 32 columns with 32 features. After preparing this data into usable data I then used a function from scikit-learn to divide it into training data and testing too for my model to determine many things about this dataset and this was all done using 80/20 split 80% for the to train the model and then the 20% was for the performance of it. 
 
 ## Model Development
 For this project, I have chosen three different ways of looking at this data by using three supervised clarification Machine learning: Logistic regression, Decision Tree and Random forest. The reason for these types of machine learning to look at this data was because that in my opinion for this datasets these ways of looking at the data was the most optimal and effective at identifying the phishing websites. Logistic regression was used to see the separation of the data into different categories and it provided a good baseline for this project compared to the more complex models out there.
@@ -64,15 +64,30 @@ Finally, Random Forest was used because it can combine multiple of those Decisio
 
 Here are a few examples showing the difference of the three models and their accuracy and recall
 
-### --------Model                         Test Accuracy (%)       Phishing Recall (%) -------------
-* 0        Logistic Regression              92.90                90.20
-* 1        Decision Tree                    97.11                96.22
-* 2        Random Forest                    97.42                96.12
+###  Model                       Test Accuracy (%)       Phishing Recall (%) 
+* 0  Logistic Regression              92.90                90.20
+* 1  Decision Tree                    97.11                96.22
+* 2  Random Forest                    97.42                96.12
 
 ### Another comparison 
 * Logistic Regression training accuracy: 92.76345545002262
 * Decision Tree training accuracy: 99.01628222523745
 * Random Forest training accuracy: 99.01628222523745
+
+### References
+* https://scikit-learn.org/stable/index.html
+* https://docs.jupyter.org/en/latest/
+* https://machine-learning-with-python.readthedocs.io/en/latest/
+* https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/machine-learning-examples.ipynb
+* https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_jupyter_notebook.html
+* https://developers.redhat.com/articles/2021/05/21/introduction-machine-learning-jupyter-notebooks#using_a_jupyter_notebook_for_machine_learning
+* https://github.com/jxareas/Machine-Learning-Notebooks
+* https://github.com/niedzwiedz89/book_ml_ipynb
+* https://mljourney.com/building-your-first-machine-learning-model-in-a-jupyter-notebook/
+* https://dev.to/thelogicwarlock/from-notebook-to-model-a-practical-guide-to-jupyter-for-machine-learning-3dm5
+* https://github.com/ageron/handson-mlp
+* https://www.youtube.com/watch?v=5pf0_bpNbkw
+* https://github.com/justmarkham/scikit-learn-videos
 
 
 
