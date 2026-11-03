@@ -42,9 +42,9 @@ I choose this topic when I was doing research for topic, I came across this and 
 *	Finally, I saved the Random Forest model once it was trained.
 
 ## Data Preparation 
-* Total Rows: 11,055
-* Total Original columns: 32
-* Input Features:  30
+* Total Rows: 11,056
+* Columns: 32
+* Features:  32
 * Legitimate websites (1): 6,157
 * Phishing websites (-1):  4,898
 
