@@ -3,6 +3,9 @@
   * 2026-09-29 – 2026-11-27
   * Data Science and Machine Learning Sem 1 Year 4
 
+### Linkedin
+* https://www.linkedin.com/in/sam-cardo-82a71b279/
+
 
 
 ## Topic
