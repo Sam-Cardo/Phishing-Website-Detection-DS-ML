@@ -3,10 +3,9 @@
   * 2026-09-29 – 2026-11-27
   * Data Science and Machine Learning Sem 1 Year 4
 
-### Linkedin
+### Profiles
 * https://www.linkedin.com/in/sam-cardo-82a71b279/
-
-
+* https://github.com/Sam-Cardo
 
 ## Topic
 Phishing website detection
@@ -20,13 +19,39 @@ Link: https://www.kaggle.com/datasets/mdsultanulislamovi/phishing-website-detect
 ## Technologies Used 
 *	Python
 *	Jupyter Notebook
-*	Panadas
+*	Github
+
+## Data and data storage technologies
+* CSV Files
+* Panadas
+* Dataframes
+* Train-test splitting
+
+## Programming and Relevant Technical Expertise
+* Java
+* C++
+* PHP
+* C#
+* Go
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Jupyter Notebook 
+
+## Machine Learning Models Used
+* Logistic Regression
+* Decision Tree
+* Random Forest
+  
+For this project, I have chosen three different ways of looking at this data by using three supervised clarification Machine learning: Logistic regression, Decision Tree and Random forest. The reason for these types of machine learning to look at this data was because that in my opinion for this datasets these ways of looking at the data was the most optimal and effective at identifying the phishing websites. Logistic regression was used to see the separation of the data into different categories and it provided a good baseline for this project compared to the more complex models out there.
+
+Decision tree was selected for this project because it is able to make a series of decisions based on the input features that are in the dataset to clarify those records. another thing was that I found that it was able to make a straightforward approach for this project just like the logistic regression it was just easier to understand it.
+
+Finally, Random Forest was used because it can combine multiple of those Decision tress to make a final prediction by using the multiple trees in that way rather than relying on just one decision tree for my model to analyze the data. It can also provide a better performance than the other types of machine learning that I looked at before and it can reduce the chance of error on just one decision tree being used to make prediction. Overall this machine was the best option mainly due to its performance and precision score.
 
 
-## Machine Learning
-The type of ML for this project I have choose to do supervised learning of ML and focusing on classification and use three version of it being logistic regression, decision tree and random Forest because of the advantages of them being able to handle larger datasets, easy to implement and interpret for the users, linear separable data and the many more advantages that from this type of classification ML.
-
-## Question
+## Question used for my project idea
  Can machine learning determine weather a website can be found as legitimate or phishing website.
 
 ## Why I choose this topic
@@ -57,14 +82,6 @@ I choose this topic when I was doing research for topic, I came across this and 
 
 ### Explanation:
 How I prepared the data for machine learning was that I first loaded the the dataset into the notebook using pandas then I need to check what dimensions that this data set had like all the column names. Also, I needed to clean the column names and make the data into a suitable format for Jupiter notebook to make it usable format that was all done by using pandas and loading the csv that Kaggle provided to me and I noticed that it had 11,055 records inside of it with 32 columns with 32 features. After preparing this data into usable data I then used a function from scikit-learn to divide it into training data and testing too for my model to determine many things about this dataset and this was all done using 80/20 split 80% for the to train the model and then the 20% was for the performance of it. 
-
-## Model Development
-For this project, I have chosen three different ways of looking at this data by using three supervised clarification Machine learning: Logistic regression, Decision Tree and Random forest. The reason for these types of machine learning to look at this data was because that in my opinion for this datasets these ways of looking at the data was the most optimal and effective at identifying the phishing websites. Logistic regression was used to see the separation of the data into different categories and it provided a good baseline for this project compared to the more complex models out there.
-
-Decision tree was selected for this project because it is able to make a series of decisions based on the input features that are in the dataset to clarify those records. another thing was that I found that it was able to make a straightforward approach for this project just like the logistic regression it was just easier to understand it.
-
-Finally, Random Forest was used because it can combine multiple of those Decision tress to make a final prediction by using the multiple trees in that way rather than relying on just one decision tree for my model to analyze the data. It can also provide a better performance than the other types of machine learning that I looked at before and it can reduce the chance of error on just one decision tree being used to make prediction. Overall this machine was the best option mainly due to its performance and precision score.
-
 
 
 ## Results and conclusion: 
