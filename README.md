@@ -42,11 +42,18 @@ I choose this topic when I was doing research for topic, I came across this and 
 *	Finally, I saved the Random Forest model once it was trained.
 
 ## Dataset Infomation
-* Total Rows: 11,056
+* Total Rows: 11,055
 * Columns: 32
 * Features: 32
 * Legitimate websites (1): 6,157
 * Phishing websites (-1):  4,898
+
+## Some Examples of the features in the dataset
+* SSLfinal_State
+* URL_of_Anchor
+* web_traffic
+* having_Sub_Domain
+* HTTPS_token
 
 ### Explanation:
 How I prepared the data for machine learning was that I first loaded the the dataset into the notebook using pandas then I need to check what dimensions that this data set had like all the column names. Also, I needed to clean the column names and make the data into a suitable format for Jupiter notebook to make it usable format that was all done by using pandas and loading the csv that Kaggle provided to me and I noticed that it had 11,055 records inside of it with 32 columns with 32 features. After preparing this data into usable data I then used a function from scikit-learn to divide it into training data and testing too for my model to determine many things about this dataset and this was all done using 80/20 split 80% for the to train the model and then the 20% was for the performance of it. 
@@ -62,7 +69,7 @@ Finally, Random Forest was used because it can combine multiple of those Decisio
 
 ## Results and conclusion: 
 
-Here are a few examples showing the difference of the three models and their accuracy and recall
+Here are a few examples showing the difference of the three models and their accuracy and recall and these results are important because it shows that random forest has the better accuracy but not the better phishing recall. 
 
 ###  Model                       Test Accuracy (%)       Phishing Recall (%) 
 * 0  Logistic Regression              92.90                90.20
