@@ -30,6 +30,10 @@ unseen data which only happens when the model learns the testing data to well. A
 which does a similar thing to testing for overfitting this validation can prevent overfitting to a single split which means it splits the data into 2 which was helpful from the 
 80/20 split.
 
+## Week 5-8 | Nov 1st - Nov 30th
+Over these weeks I has my model done, submitted my draft of my portfolio and polished my portfolio created my presentation.
+
+Then I presented.
 
 
 
