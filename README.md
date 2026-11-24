@@ -112,6 +112,12 @@ Here are a few examples showing the difference of the three models and their acc
 * https://github.com/ageron/handson-mlp
 * https://www.youtube.com/watch?v=5pf0_bpNbkw
 * https://github.com/justmarkham/scikit-learn-videos
+* https://www.geeksforgeeks.org/machine-learning/random-forest-hyperparameter-tuning-in-python/
+* https://www.geeksforgeeks.org/machine-learning/what-is-scikit-learn-random-state-in-splitting-dataset/
+* https://www.geeksforgeeks.org/machine-learning/how-to-split-a-dataset-into-train-and-test-sets-using-python/
+* https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html
+* https://www.geeksforgeeks.org/machine-learning/stratified-k-fold-cross-validation/
+* https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html#pandas.DataFrame.iloc
 
 
 
