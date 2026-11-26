@@ -13,6 +13,12 @@ Phishing website detection
 ## Overview
 This portfolio will be focusing on making a system that uses machine learning to be able to determine weather or not its capable of figuring out if a website is legitimate or has a phishing capability or element embedded into its system. I hope that this project will show great data handling skills, and other techniques to answer the questions that I want to find out about. Finally, this portfolio will also include many important and professional aspects like using a linked in profile and GitHub profile/ repository.
 
+## Question used for my project idea
+ Can machine learning determine whether a website can be found as legitimate or phishing website.
+
+## Why I choose this topic
+I choose this topic when I was doing research for topic, I came across this and it piqued my interest because I was always curious because I have always been aware that website can contain phishing elements that are trying to steal important information about you. Also, I find that this is truly a real-world problem that so many occurrences where people that have less knowledge of what to look for can be a victim of this problem and be totally unaware until it is too late for them and cause a big impact on their lives.
+
 ##  Dataset
 Link: https://www.kaggle.com/datasets/mdsultanulislamovi/phishing-website-detection-datasets?select=dataset1.csv 
 
@@ -40,22 +46,14 @@ Link: https://www.kaggle.com/datasets/mdsultanulislamovi/phishing-website-detect
 * Jupyter Notebook 
 
 ## Machine Learning Models Used
-* Logistic Regression
-* Decision Tree
-* Random Forest
-  
+
 For this project, I have chosen three different ways of looking at this data by using three supervised clarification Machine learning: Logistic regression, Decision Tree and Random forest. The reason for these types of machine learning to look at this data was because that in my opinion for this datasets these ways of looking at the data was the most optimal and effective at identifying the phishing websites. Logistic regression was used to see the separation of the data into different categories and it provided a good baseline for this project compared to the more complex models out there.
 
-Decision tree was selected for this project because it is able to make a series of decisions based on the input features that are in the dataset to clarify those records. another thing was that I found that it was able to make a straightforward approach for this project just like the logistic regression it was just easier to understand it.
+* Logistic Regression was simple to use, easy to interpret baseline that separates the two classes.
 
-Finally, Random Forest was used because it can combine multiple of those Decision tress to make a final prediction by using the multiple trees in that way rather than relying on just one decision tree for my model to analyze the data. It can also provide a better performance than the other types of machine learning that I looked at before and it can reduce the chance of error on just one decision tree being used to make prediction. Overall this machine was the best option mainly due to its performance and precision score.
+* Decision Tree: Decision tree was selected for this project because it is able to make a series of decisions based on the input features that are in the dataset to clarify those records. another thing was that I found that it was able to make a straightforward approach for this project just like the logistic regression it was just easier to understand it.
 
-
-## Question used for my project idea
- Can machine learning determine weather a website can be found as legitimate or phishing website.
-
-## Why I choose this topic
-I choose this topic when I was doing research for topic, I came across this and it piqued my interest because I was always curious because I have always been aware that website can contain phishing elements that are trying to steal important information about you. Also, I find that this is truly a real-world problem that so many occurrences where people that have less knowledge of what to look for can be a victim of this problem and be totally unaware until it is too late for them and cause a big impact on their lives.
+* Random Forest was used because it can combine multiple of those Decision tress to make a final prediction by using the multiple trees in that way rather than relying on just one decision tree for my model to analyze the data. It can also provide a better performance than the other types of machine learning that I looked at before and it can reduce the chance of error on just one decision tree being used to make prediction. Overall this machine was the best option mainly due to its performance and precision score.
 
 
 ## Project Implementation 
@@ -69,16 +67,22 @@ I choose this topic when I was doing research for topic, I came across this and 
 ## Dataset Infomation
 * Total Rows: 11,055
 * Columns: 32
-* Features: 32
+* Features: 30
 * Legitimate websites (1): 6,157
 * Phishing websites (-1):  4,898
 
-## Some Examples of the features in the dataset
-* SSLfinal_State
-* URL_of_Anchor
-* web_traffic
-* having_Sub_Domain
-* HTTPS_token
+| Feature Index | Feature Name | Importance |
+|---:|---|---:|
+| 7 | SSLfinal_State | 0.319667 |
+| 13 | URL_of_Anchor | 0.250049 |
+| 25 | web_traffic | 0.070803 |
+| 6 | having_Sub_Domain | 0.069482 |
+| 14 | Links_in_tags | 0.043887 |
+| 5 | Prefix_Suffix | 0.037888 |
+| 15 | SFH | 0.020226 |
+| 28 | Links_pointing_to_page | 0.019292 |
+| 12 | Request_URL | 0.017682 |
+| 8 | Domain_registeration_length | 0.016681 |
 
 ### Explanation:
 How I prepared the data for machine learning was that I first loaded the the dataset into the notebook using pandas then I need to check what dimensions that this data set had like all the column names. Also, I needed to clean the column names and make the data into a suitable format for Jupiter notebook to make it usable format that was all done by using pandas and loading the csv that Kaggle provided to me and I noticed that it had 11,055 records inside of it with 32 columns with 32 features. After preparing this data into usable data I then used a function from scikit-learn to divide it into training data and testing too for my model to determine many things about this dataset and this was all done using 80/20 split 80% for the to train the model and then the 20% was for the performance of it. 
@@ -88,15 +92,23 @@ How I prepared the data for machine learning was that I first loaded the the dat
 
 Here are a few examples showing the difference of the three models and their accuracy and recall and these results are important because it shows that random forest has the better accuracy but not the better phishing recall. 
 
-###  Model                       Test Accuracy (%)       Phishing Recall (%) 
-* 0  Logistic Regression              92.90                90.20
-* 1  Decision Tree                    97.11                96.22
-* 2  Random Forest                    97.42                96.12
+| Model | Accuracy (%) | Phishing Recall (%) |
+|---|---:|---:|
+| Logistic Regression | 92.90 | 90.20 |
+| Decision Tree | 97.11 | 96.22 |
+| Random Forest | 97.42 | 96.12 |
 
-### Another comparison 
-* Logistic Regression training accuracy: 92.76345545002262
-* Decision Tree training accuracy: 99.01628222523745
-* Random Forest training accuracy: 99.01628222523745
+| Model | Training Accuracy (%) |
+|---|---:|
+| Logistic Regression | 92.76 |
+| Decision Tree | 99.02 |
+| Random Forest | 99.02 |
+
+| Model | Average Accuracy (%) | Accuracy Standard Deviation (%) | Average Phishing Recall (%) | Phishing Recall Standard Deviation (%) |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 92.74 | 0.49 | 90.51 | 1.26 |
+| Decision Tree | 96.26 | 0.47 | 95.28 | 1.10 |
+| Random Forest | 96.98 | 0.25 | 95.81 | 0.95 |
 
 ### References
 * https://scikit-learn.org/stable/index.html
