@@ -90,6 +90,8 @@ How I prepared the data for machine learning was that I first loaded the the dat
 
 ## Results and conclusion: 
 
+[view graphs here: ](graphs)
+
 Here are a few examples showing the difference of the three models and their accuracy and recall and these results are important because it shows that random forest has the better accuracy but not the better phishing recall. 
 
 | Model | Accuracy (%) | Phishing Recall (%) |
